@@ -1,0 +1,978 @@
+15.12.2022: 20:31:33.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:31:46.532:  [Thread=15264] ST: OnConnectionCreate Ожидаем Event=6308 epType=1
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: * TVoIPEndPointCallBack.OnConnectionCreate
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: * TVoIPConnection.Create
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: TVoIPConnection.Create: Channel.SetVoIPConnection(58839568);  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=16408
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: TChannel_VoIP.SetVoIPConnection: FVoIPConnection=0 Value=58839568;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=16408
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: * TVoIPConnectionCallBack.Create
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxAddRef: 2
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxAddRef: 3
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxReleaseRef: 2
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: ProcessOnConnectionCreate Выставляем Event=6308
+15.12.2022: 20:31:46.532:  [Thread=16408] ST: ProcessOnConnectionCreate Выставили Event=6308
+15.12.2022: 20:31:46.532:  [Thread=15264] ST: OnConnectionCreate Сработал Event=6308
+15.12.2022: 20:31:46.537:  [Thread=14700] ST: VoIP: OnIncomingCall: CalledNumber=555 CallerName=100 CallerAddress=<sip:100@192.168.1.100:15060> CallerNumber=sip:100@192.168.1.100:5061;  Uid=2100 R=1 C=0 O=0 I=0 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.537:  [Thread=14700] ST: CheckPlayCommRecParams (adaptive);  Uid=2100 R=1 C=0 O=0 I=0 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.537:  [Thread=14700] ST: Q.931: OnSetup CallerNumber=100; CallerName=; CallerAddress=192.168.1.100; CalledNumber=555; CalledName=; CalledAddress=; CallID=; CallInfo=InfinityPhoneCall;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.537:  [Thread=14296] Q.931: OnSetup CallerNumber=100; CallerName=; CallerAddress=192.168.1.100; CalledNumber=555; CalledName=; CalledAddress=; CallID=; CallInfo=InfinityPhoneCall;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=<nil>
+15.12.2022: 20:31:46.537:  [Thread=14296] H323Abonents.FindByAddressNumber: Address=192.168.1.100 Number=100 Device=Абоненты
+15.12.2022: 20:31:46.537:  [Thread=14296] H323Abonents.FindByAddressNumber: Address=192.168.1.100 Number=100 found by address and number: IP001
+15.12.2022: 20:31:46.537:  [Thread=14296] H323Abonent: TimerDeactivate ID=IP001 Active=1 Busy=0 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[2100]
+15.12.2022: 20:31:46.537:  [Thread=14296] OnSetup RemoteParty detected: Number=100 Name=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:46.537:  [Thread=14296] OnSetup RemoteParty updated: Number=100 Name=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:46.538:  [Thread=14296] Q.931: AcceptCall;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:46.538:  [Thread=14700] ST: Q.931: AcceptCall;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.538:  [Thread=14700] ST: ActivateTimer Interval=5000 Event=6;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.543:  [Thread=14700] ST: VoIP: OnAudioChannelsReady;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.543:  [Thread=14700] ST: TChannel_VoIP.CheckCallID;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.547:  [Thread=14700] ST: TChannel_VoIP.CheckCallID: CallID=27f8e7dc-6c25-1910-9f87-2c56dcd5678d@DESKTOP-3HTQQU2 FCallID=;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.547:  [Thread=14700] ST: Q.931: OnSetCallID: CallID=27f8e7dc-6c25-1910-9f87-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.547:  [Thread=14700] ST: VoIP: OnEstablished;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.547:  [Thread=14296] Q.931: OnSetCallID CallID=27f8e7dc-6c25-1910-9f87-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14700] ST: TChannel_VoIP.CheckCallID;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.547:  [Thread=14700] ST: TChannel_VoIP.CheckCallID: CallID=27f8e7dc-6c25-1910-9f87-2c56dcd5678d@DESKTOP-3HTQQU2 FCallID=27f8e7dc-6c25-1910-9f87-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.547:  [Thread=14700] ST: DeActivateTimer;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.547:  [Thread=14700] ST: Q.931: OnConnect CallerNumber=;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.547:  [Thread=14296] Q.931: OnConnect CallerNumber=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] TryRingFromChannelToNumber: Number=555 Emulate=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] TryRingFromChannelToNumber: Number found: 555;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] MyCallSetInfo num=100 anum=@555 state=2;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] TryRingFromChannelToNumber: Number=x555 Emulate=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] TryRingFromChannelToNumber: Number found: x;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] MyCallSetInfo num=100 anum=@x555 state=2;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] CallStatClass change: Old=Unknown New=Inner;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] MonitorController.CallInnerAdd: CallID={C02BB62D-E6A4-485B-B44C-14813B36F638} DateTime=15.12.2022 20:31:46 State=1 ANumber=@100 AName= AIDUser=0 BNumber=x555 BName= BIDUser=0 
+15.12.2022: 20:31:46.547:  [Thread=14296] Number931Group.GetDestination.Fast: Number=x Uid=2100 Result=z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] CallStatStartWait: Number=x555;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] MonitorController.CallInnerUpdate: CallID={C02BB62D-E6A4-485B-B44C-14813B36F638} DateTime=15.12.2022 20:31:46 State=1 ANumber=@100 AName= AIDUser=0 BNumber=x555 BName= BIDUser=0 
+15.12.2022: 20:31:46.547:  [Thread=14296] StartRingTo: Number=x Channels=0 H323=1 PBX=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceInnerAdd({C02BB62D-E6A4-485B-B44C-14813B36F638}, 1, @100, x555, 44910,8553998495, end)
+15.12.2022: 20:31:46.547:  [Thread=14296] StartRingTo A-party base data: CallerNumber=100 CallerName=;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] InnerCallerID by channel: ;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] StartRingTo A-party updated data: CallerNumber=100 CallerName=;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] StartRingTo processing...;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] H323Abonent: TimerDeactivate ID=IP909047 Active=1 Busy=0 IsReg=1 IsUnReg=0 Address=127.0.0.1:65430 CurrentChannels=[3001]
+15.12.2022: 20:31:46.547:  [Thread=14296] SetRingFrom;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] SetRingTo;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] StartRingTo: Copying CallID from AChannel;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] CallID change: Old= New={C02BB62D-E6A4-485B-B44C-14813B36F638};  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] MyCallSetInfo num=z9047 anum=@100 state=1;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] CreateElements ch=3001
+15.12.2022: 20:31:46.547:  [Thread=14296] Check for elements before FMyCallNumber=z9047;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] Check for elements before FMyCallNumber=100;  Uid=2100;  State=Rto R=0 C=1  ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] CreateElements ACalledNumber=x555 AChannel.LocalParty.Number= AChannel.FCalledNumber=555
+15.12.2022: 20:31:46.547:  [Thread=14296] StartRingTo.CreateElements ch=3001 проверка для номера z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] CME: SetState to Звонок... [Chs=""] Cause=0  Owner=z9047 Number=100 State= Id={60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}
+15.12.2022: 20:31:46.547:  [Thread=14296] StartRingTo.CreateElements ch=3001 проверка для номера 100
+15.12.2022: 20:31:46.547:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CreateCall({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, z9047, 44910,8553998495, {C02BB62D-E6A4-485B-B44C-14813B36F638}, $CalledNumber=555;, end)
+15.12.2022: 20:31:46.547:  [Thread=14296] Virtual number detected: z9047
+15.12.2022: 20:31:46.547:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallNumber({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, 100, end)
+15.12.2022: 20:31:46.547:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, 2, 44910,8553998495, 0, end)
+15.12.2022: 20:31:46.547:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CreateCall({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, 100, 44910,8553998495, {C02BB62D-E6A4-485B-B44C-14813B36F638}, $CalledNumber=555;, end)
+15.12.2022: 20:31:46.547:  [Thread=14296] Virtual number source found:  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100;
+15.12.2022: 20:31:46.547:  [Thread=14296] CME: SetState to Дозвон... [Chs=""] Cause=0  Owner=100 Number=z9047 State= Id={7CED42D4-2E40-4A8C-91C1-11514A9978DD}
+15.12.2022: 20:31:46.547:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallNumber({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, z9047, end)
+15.12.2022: 20:31:46.547:  [Thread=14296] Check for elements after;  Uid=3001;  State=Rfrom R=1 C=0  Elem[0] Num=z9047 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] Check for elements after;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, 1, 44910,8553998495, 0, end)
+15.12.2022: 20:31:46.547:  [Thread=14296] Q.931: MakeCall CallerNumber=100; CallerName=; CallerAddress=; CalledNumber=z9047; CalledName=; CalledAddress=127.0.0.1:65430; CallID={C02BB62D-E6A4-485B-B44C-14813B36F638}; CallInfo=; PreDial=;  Uid=3001;  State=Rfrom R=1 C=0  Elem[0] Num=z9047 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.547:  [Thread=14296] ScreenPopUpShow Number=z9047; CallID={C02BB62D-E6A4-485B-B44C-14813B36F638};  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: 100);  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.547:  [Thread=1504] ST: Q.931: MakeCall CallerNumber=100; CallerName=; CallerAddress=; CalledNumber=z9047; CalledName=; CalledAddress=127.0.0.1:65430; PostDial=;  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 20:31:46.547:  [Thread=1504] ST: CheckPlayCommRecParams (adaptive);  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 20:31:46.548:  [Thread=14296] StartRingTo RingCount=1;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.548:  [Thread=14296] Audio: PlayBackRingStart;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.548:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, , AbonentNumberCanonic: 100, AbonentNumberDisplay: 100, AbonentNumberCityCode: , Uid: 2100, IPAddress:)
+15.12.2022: 20:31:46.548:  [Thread=14296] Audio: PlayPBXToneStart Tone=Backring;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.548:  [Thread=14296] TimerActivate Interval=10000 sec;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.548:  [Thread=14700] ST: Audio: PlayPBXToneStart;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.548:  [Thread=14296] TimerExActivate Interval=600 sec.;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.548:  [Thread=14296] StatisticSeanseStart: uid=2100
+15.12.2022: 20:31:46.548:  [Thread=14700] ST: Audio: PlayFileNameStart FileName=C:\Program Files (x86)\IntelTelecom\Infinity Call-center X\CxTelephony\sound/backring_high.wav;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.548:  [Thread=14296] StatisticConnectionStart: uid=2100
+15.12.2022: 20:31:46.548:  [Thread=14296] ImmediateApplyStateChanged;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.548:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionAdd({C02BB62D-E6A4-485B-B44C-14813B36F638}, 7, 2100, , 100, , 44910,8553998611, end)
+15.12.2022: 20:31:46.548:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetDirection(7, 2, end)
+15.12.2022: 20:31:46.548:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, 7, 44910,8553998611, end)
+15.12.2022: 20:31:46.548:  [Thread=14700] ST: VoIP: OnPlayStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.548:  [Thread=14700] ST: Audio: OnPlayStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.548:  [Thread=14296] Audio: OnPlayStarted;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.550:  [Thread=7368] ST: OnConnectionCreate Ожидаем Event=6416 epType=2
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: * TVoIPEndPointCallBack.OnConnectionCreate
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: * TVoIPConnection.Create
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: TVoIPConnection.Create: Channel.SetVoIPConnection(28941784);  Uid=3001 R=0 C=0 O=1 I=0 Connection=nil Thread=11500
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: TChannel_VoIP.SetVoIPConnection: FVoIPConnection=0 Value=28941784;  Uid=3001 R=0 C=0 O=1 I=0 Connection=nil Thread=11500
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: * TVoIPConnectionCallBack.Create
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: * TVoIPConnectionCallBack.CxAddRef: 2
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: * TVoIPConnectionCallBack.CxReleaseRef: 1
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: ProcessOnConnectionCreate Выставляем Event=6416
+15.12.2022: 20:31:46.551:  [Thread=11500] ST: ProcessOnConnectionCreate Выставили Event=6416
+15.12.2022: 20:31:46.551:  [Thread=7368] ST: OnConnectionCreate Сработал Event=6416
+15.12.2022: 20:31:46.588:  [Thread=1504] ST: VoIP: OnBackRing;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.588:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.588:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.588:  [Thread=1504] ST: Q.931: OnSetCallID: CallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.588:  [Thread=1504] ST: Q.931: OnAlerting;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.588:  [Thread=1504] ST: VoIP: OnAlertingEx;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.588:  [Thread=14296] Q.931: OnSetCallID CallID=Unknown;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9047 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.588:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.588:  [Thread=14296] Q.931: OnAlerting;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9047 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.588:  [Thread=14296] CME: CME: EventOnAlerting [Chs="3001"]   Owner=100 Number=z9047 State=Дозвон... Id={7CED42D4-2E40-4A8C-91C1-11514A9978DD}
+15.12.2022: 20:31:46.588:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, 777, 44910,8554003241, 0, end)
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: Q.931: OnAlertingEx;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: VoIP: OnAudioChannelsReady;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=14296] Q.931: OnAlertingEx;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9047 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: VoIP: OnEstablished;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: Q.931: OnConnect CallerNumber=;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.589:  [Thread=14296] Q.931: OnConnect CallerNumber=;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9047 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=14296] TransferInfoAnswered;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=14296] TransferInfoAnswered: Mode = Unknown - ignored;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=14296] CallStatStartTalk: Number=@z9047 CSC=3;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=14296] CallStatStartTalk: Number=@100 CSC=0;  Uid=3001;  State=Rfrom R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=14296] ReSetRingTo;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=14296] TimerDeactivate;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=14296] TimerExDeactivate;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=14296] Audio: PlayStop FromIVR=0;  Uid=2100;  State=Ready R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=14296] ReSetRingFrom;  Uid=3001;  State=Rfrom R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=14296] CME: SetState to Подключен [Chs="2100"] Cause=0  Owner=z9047 Number=100 State=Звонок... Id={60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}
+15.12.2022: 20:31:46.589:  [Thread=14700] ST: Audio: PlayStop;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.589:  [Thread=14296] CME: SetState to Подключен [Chs="3001"] Cause=0  Owner=100 Number=z9047 State=Дозвон... Id={7CED42D4-2E40-4A8C-91C1-11514A9978DD}
+15.12.2022: 20:31:46.589:  [Thread=14296] StatisticConnectionAnswer: uidA=2100
+15.12.2022: 20:31:46.589:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, 4, 44910,8554003356, 0, end)
+15.12.2022: 20:31:46.589:  [Thread=14296] StatisticConnectionAnswer: Copying CallID from chB (C);  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=14296] CheckRecord: Uid1=2100 Num1=100 Uid2=3001 Num2=z9047 Record=0
+15.12.2022: 20:31:46.589:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, 4, 44910,8554003356, 0, end)
+15.12.2022: 20:31:46.589:  [Thread=14296] SetComm;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, 7, 44910,8554003356, end)
+15.12.2022: 20:31:46.589:  [Thread=14296] SetComm;  Uid=2100;  State=Ready R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, 7, 44910,8554003356, end)
+15.12.2022: 20:31:46.589:  [Thread=14296] StartComm AChannel=2100;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetAbonentB(7, 3001, , z9047, end)
+15.12.2022: 20:31:46.589:  [Thread=14296] ScreenPopUpShow Number=100; CallID={C02BB62D-E6A4-485B-B44C-14813B36F638};  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetDirection(7, 3, end)
+15.12.2022: 20:31:46.589:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: z9047);  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetConnected(7, 44910,8554003356, end)
+15.12.2022: 20:31:46.589:  [Thread=14296] ScreenPopUpShow Number=z9047; CallID={C02BB62D-E6A4-485B-B44C-14813B36F638};  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: 100);  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, , AbonentNumberCanonic: @z9047, AbonentNumberDisplay: Внутр. z9047, AbonentNumberCityCode: , Uid: 3001, IPAddress:)
+15.12.2022: 20:31:46.589:  [Thread=14700] ST: VoIP: OnPlayStoped;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.589:  [Thread=14700] ST: Audio: OnPlayStoped;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.589:  [Thread=14296] Comm: CommFromStart;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:46.589:  [Thread=14296] Comm: CommFromStart;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.589:  [Thread=1504] ST: Audio: CommStart UidFrom=2100; UidTo=3001 ForceExternal=0;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.590:  [Thread=14296] Audio: OnPlayStoped;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:46.590:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, , AbonentNumberCanonic: 100, AbonentNumberDisplay: 100, AbonentNumberCityCode: , Uid: 2100, IPAddress:)
+15.12.2022: 20:31:46.590:  [Thread=1504] ST: VoIP: OnCommFromStarted;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.590:  [Thread=14700] ST: Audio: CommStart UidFrom=3001; UidTo=2100 ForceExternal=0;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.590:  [Thread=1504] ST: Audio: OnCommFromStarted;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:46.590:  [Thread=14700] ST: VoIP: OnCommFromStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:46.590:  [Thread=14700] ST: Audio: OnCommFromStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:47.441:  [Thread=14296] SetExtensionState: 100=2
+15.12.2022: 20:31:47.441:  [Thread=14296] ST: SetExtensionState 100=2
+15.12.2022: 20:31:48.142:  [Thread=14700] ST: VoIP: OnCleared Cause=3=0x0003;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:48.142:  [Thread=14700] ST: DeActivateTimer;  Uid=2100 R=0 C=1 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:48.142:  [Thread=14700] ST: Q.931: OnDisconnect;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:48.143:  [Thread=14700] ST: Audio: OnCommFromStoped;  Uid=2100 R=0 C=0 O=0 I=1 Connection=58839568 Thread=14700
+15.12.2022: 20:31:48.143:  [Thread=14700] ST: TChannel_VoIP.ClearVoIPConnectionRef: VoipConnection=58839568 Thread=14700;  Uid=2100 R=1 C=0 O=0 I=0 Connection=58839568 Thread=14700
+15.12.2022: 20:31:48.143:  [Thread=14296] Q.931: OnDisconnect;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9047 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14700] ST: Q.931: OnRelease Cause=3;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 20:31:48.143:  [Thread=14296] CME: Finishing element (case J)  Owner=z9047 Number=100 State=Подключен Id={60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}
+15.12.2022: 20:31:48.143:  [Thread=14296] CME: SetState to Завершен [Chs="2100"] Cause=0  Owner=z9047 Number=100 State=Подключен Id={60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}
+15.12.2022: 20:31:48.143:  [Thread=14296] Channel may be dropped;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, 11, 44910,8554183218, 0, end)
+15.12.2022: 20:31:48.143:  [Thread=14296] Detail info: Channel elements:  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; Number: z9047 Number elements:  Elem[0] Num=100 Owner=z9047 State=Завершен Chs=;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] StatisticConnectionStop: uid=2100
+15.12.2022: 20:31:48.143:  [Thread=14296] Comm: CommFromStop;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionStop(7, 1, 44910,8554298958, end)
+15.12.2022: 20:31:48.143:  [Thread=14296] ReSetComm;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] StartBusy;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=1504] ST: Audio: CommStop UidFrom=2100; UidTo=3001;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.143:  [Thread=14296] StatisticConnectionStop: uid=3001
+15.12.2022: 20:31:48.143:  [Thread=14296] StartBusy: SetReady case B;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionStop(7, 2, 44910,8554298958, end)
+15.12.2022: 20:31:48.143:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9047 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] CME: Finishing element (case K) with cause=0  Owner=100 Number=z9047 State=Подключен Id={7CED42D4-2E40-4A8C-91C1-11514A9978DD}
+15.12.2022: 20:31:48.143:  [Thread=14296] CME: SetState to Завершен [Chs="3001"] Cause=0  Owner=100 Number=z9047 State=Подключен Id={7CED42D4-2E40-4A8C-91C1-11514A9978DD}
+15.12.2022: 20:31:48.143:  [Thread=14296] Channel may be dropped;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] Detail info: Channel elements:  Number: 100 Number elements:  Elem[0] Num=z9047 Owner=100 State=Завершен Chs=;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] CallStatClear;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, 13, 44910,8554183218, 0, end)
+15.12.2022: 20:31:48.143:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] Comm: CommFromStop;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] CallID change: Old={C02BB62D-E6A4-485B-B44C-14813B36F638} New=;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] CallStatClear;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] Q.931: DropCall;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] SetReady;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] CallStatClear;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] MonitorController.CallInnerFinish: CallID={C02BB62D-E6A4-485B-B44C-14813B36F638} DateTime=15.12.2022 20:31:48
+15.12.2022: 20:31:48.143:  [Thread=14296] CallStatClass change: Old=Inner New=Unknown;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] Clearing CallID and IdSeance cause by call finished CallID={C02BB62D-E6A4-485B-B44C-14813B36F638} IdSeanse=6;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] CallID change: Old={C02BB62D-E6A4-485B-B44C-14813B36F638} New=;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] CallStatClear;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceInnerSetState({C02BB62D-E6A4-485B-B44C-14813B36F638}, 3, 44910,8554183218, end)
+15.12.2022: 20:31:48.143:  [Thread=14296] CallID is no longer exists: {C02BB62D-E6A4-485B-B44C-14813B36F638}
+15.12.2022: 20:31:48.143:  [Thread=14296] StopAllCommTos;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] Comm: CommFromStop;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9047
+15.12.2022: 20:31:48.143:  [Thread=14296] StopAllCommFroms;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] Q.931: OnRelease Cause=3;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] SetReady;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] StopAllCommTos;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] StopAllCommFroms;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 20:31:48.143:  [Thread=14296] H323Abonent: SetBusy Interval=2000 ID=IP001 Active=1 Busy=0 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[]
+15.12.2022: 20:31:48.143:  [Thread=14296] H323Abonent: TimerActivate ID=IP001 Active=1 Busy=1 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[]
+15.12.2022: 20:31:48.143:  [Thread=1504] ST: Q.931: DropCall;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.143:  [Thread=1504] ST: ActivateTimer Interval=15000 Event=5;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.144:  [Thread=14700] ST: Audio: CommStop UidFrom=3001; UidTo=2100;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 20:31:48.144:  [Thread=14700] ST: Audio: CommStop IGNORED;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 20:31:48.144:  [Thread=1504] ST: Audio: CommStop UidFrom=2100; UidTo=3001;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.144:  [Thread=1504] ST: Audio: CommStop IGNORED;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.144:  [Thread=1504] ST: VoIP: OnCommFromStoped;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.144:  [Thread=1504] ST: Audio: OnCommFromStoped;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.231:  [Thread=1504] ST: VoIP: OnCleared Cause=0=0x0000;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.231:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=1 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.231:  [Thread=1504] ST: Q.931: OnDisconnect;  Uid=3001 R=0 C=0 O=1 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.231:  [Thread=1504] ST: TChannel_VoIP.ClearVoIPConnectionRef: VoipConnection=28941784 Thread=1504;  Uid=3001 R=1 C=0 O=0 I=0 Connection=28941784 Thread=1504
+15.12.2022: 20:31:48.231:  [Thread=1504] ST: Q.931: OnRelease Cause=0;  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 20:31:48.231:  [Thread=14296] Q.931: OnDisconnect;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9047
+15.12.2022: 20:31:48.231:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:48.231:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:48.231:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:48.231:  [Thread=14296] Q.931: OnRelease Cause=0;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:48.231:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:48.231:  [Thread=15760] ST: * TVoIPConnectionCallBack.CxReleaseRef: 0
+15.12.2022: 20:31:48.231:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:48.231:  [Thread=15760] ST: * TVoIPConnectionCallBack.Destroy
+15.12.2022: 20:31:48.231:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9047
+15.12.2022: 20:31:48.231:  [Thread=14296] OnH323AbonentReady ID=IP909047
+15.12.2022: 20:31:48.231:  [Thread=14296] OnSomeItemReady: Numbers="z9047"
+15.12.2022: 20:31:48.231:  [Thread=14296] OnSomeItemReady: Number=z9047 UserStatus=На месте QC=0
+15.12.2022: 20:31:48.231:  [Thread=14296] OnSomeItemReady: Number=z9047 ignored (virtual)
+15.12.2022: 20:31:48.232:  [Thread=14240] ST: VoIPConnectionFreePtr: begin Thread=14240
+15.12.2022: 20:31:48.406:  [Thread=17184] ST: * TVoIPConnectionCallBack.CxReleaseRef: 1
+15.12.2022: 20:31:48.406:  [Thread=17184] ST: * TVoIPConnectionCallBack.CxReleaseRef: 0
+15.12.2022: 20:31:48.406:  [Thread=17184] ST: * TVoIPConnectionCallBack.Destroy
+15.12.2022: 20:31:48.407:  [Thread=16924] ST: VoIPConnectionFreePtr: begin Thread=16924
+15.12.2022: 20:31:48.547:  [Thread=14296] SetExtensionState: 100=0
+15.12.2022: 20:31:48.547:  [Thread=14296] ST: SetExtensionState 100=0
+15.12.2022: 20:31:49.242:  [Thread=14240] ST: VoIPConnectionFreePtr: start Thread=14240
+15.12.2022: 20:31:49.242:  [Thread=14240] ST: * TVoIPConnection.Destroy Thread=14240
+15.12.2022: 20:31:49.242:  [Thread=14240] ST: * TVoIPConnection.Destroy finished Thread=14240
+15.12.2022: 20:31:49.242:  [Thread=14240] ST: VoIPConnectionFreePtr: end Thread=14240
+15.12.2022: 20:31:49.416:  [Thread=16924] ST: VoIPConnectionFreePtr: start Thread=16924
+15.12.2022: 20:31:49.416:  [Thread=16924] ST: * TVoIPConnection.Destroy Thread=16924
+15.12.2022: 20:31:49.416:  [Thread=16924] ST: * TVoIPConnection.Destroy finished Thread=16924
+15.12.2022: 20:31:49.416:  [Thread=16924] ST: VoIPConnectionFreePtr: end Thread=16924
+15.12.2022: 20:31:50.203:  [Thread=14296] H323Abonent: OnTimer ID=IP001 Active=1 Busy=1 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[]
+15.12.2022: 20:31:50.203:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 20:31:50.203:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 20:31:50.203:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 20:31:50.203:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""
+15.12.2022: 20:31:50.755:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, 11, 44910,8554485532, 0, end)
+15.12.2022: 20:31:50.755:  [Thread=14296] CallID is no longer exists (leaks fix): {C02BB62D-E6A4-485B-B44C-14813B36F638}
+15.12.2022: 20:31:50.755:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) DeleteCall({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, end)
+15.12.2022: 20:31:50.755:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceOutboundSetState({C02BB62D-E6A4-485B-B44C-14813B36F638}, 3, 44910,8554485532, end)
+15.12.2022: 20:31:53.187:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:32:03.998:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) DeleteCall({60BC4C0E-3C3E-45F8-9AEF-2521D7DCFB86}, end)
+15.12.2022: 20:32:03.998:  [Thread=14296] CallID is no longer exists (leaks fix): {C02BB62D-E6A4-485B-B44C-14813B36F638}
+15.12.2022: 20:32:03.998:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceOutboundSetState({C02BB62D-E6A4-485B-B44C-14813B36F638}, 3, 44910,8556018287, end)
+15.12.2022: 20:32:03.998:  [Thread=14296] CallID is no longer exists (leaks fix): {C02BB62D-E6A4-485B-B44C-14813B36F638}
+15.12.2022: 20:32:03.998:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) DeleteCall({7CED42D4-2E40-4A8C-91C1-11514A9978DD}, end)
+15.12.2022: 20:32:03.998:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceOutboundSetState({C02BB62D-E6A4-485B-B44C-14813B36F638}, 3, 44910,8556018287, end)
+15.12.2022: 20:32:13.190:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:32:33.186:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:32:53.191:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:33:13.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:33:33.192:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:33:53.182:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:34:13.194:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:34:33.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:34:53.191:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:35:13.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:35:33.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:35:42.748:  [Thread=14296] OnReceivedRegister Contact=<sip:100@192.168.1.100:15060> Expires=300
+15.12.2022: 20:35:42.748:  [Thread=14296] OnReceivedRegister: Number=100 Address=192.168.1.100:15060
+15.12.2022: 20:35:42.748:  [Thread=14296] OnReceivedRegister: Registered until 15.12.2022 20:40:42
+15.12.2022: 20:35:42.748:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 20:35:42.748:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 20:35:42.748:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 20:35:42.748:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""
+15.12.2022: 20:35:53.192:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:36:13.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:36:33.182:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:36:53.188:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:37:13.188:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:37:33.192:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:37:53.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:38:13.196:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:38:33.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:38:53.187:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:39:13.196:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:39:33.183:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:39:53.194:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:40:12.761:  [Thread=14296] OnReceivedRegister Contact=<sip:100@192.168.1.100:15060> Expires=300
+15.12.2022: 20:40:12.761:  [Thread=14296] OnReceivedRegister: Number=100 Address=192.168.1.100:15060
+15.12.2022: 20:40:12.761:  [Thread=14296] OnReceivedRegister: Registered until 15.12.2022 20:45:12
+15.12.2022: 20:40:12.761:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 20:40:12.761:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 20:40:12.761:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 20:40:12.761:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""
+15.12.2022: 20:40:13.186:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:40:33.190:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:40:53.196:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:41:13.191:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:41:33.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:41:53.185:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:42:13.184:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:42:33.184:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:42:53.187:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:43:13.188:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:43:33.198:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:43:53.191:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:44:13.191:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:44:33.188:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:44:42.775:  [Thread=14296] OnReceivedRegister Contact=<sip:100@192.168.1.100:15060> Expires=300
+15.12.2022: 20:44:42.775:  [Thread=14296] OnReceivedRegister: Number=100 Address=192.168.1.100:15060
+15.12.2022: 20:44:42.775:  [Thread=14296] OnReceivedRegister: Registered until 15.12.2022 20:49:42
+15.12.2022: 20:44:42.775:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 20:44:42.775:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 20:44:42.775:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 20:44:42.775:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""
+15.12.2022: 20:44:53.196:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:45:13.195:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:45:33.192:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:45:53.181:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:46:13.185:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:46:33.186:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:46:53.192:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:47:13.194:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:47:33.188:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:47:53.182:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:48:13.186:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:48:33.195:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:48:53.184:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:49:12.787:  [Thread=14296] OnReceivedRegister Contact=<sip:100@192.168.1.100:15060> Expires=300
+15.12.2022: 20:49:12.787:  [Thread=14296] OnReceivedRegister: Number=100 Address=192.168.1.100:15060
+15.12.2022: 20:49:12.787:  [Thread=14296] OnReceivedRegister: Registered until 15.12.2022 20:54:12
+15.12.2022: 20:49:12.787:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 20:49:12.787:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 20:49:12.787:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 20:49:12.787:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""
+15.12.2022: 20:49:13.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:49:33.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:49:53.194:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:50:13.185:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:50:33.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:50:53.194:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:51:13.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:51:33.188:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:51:53.187:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:52:13.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:52:33.193:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:52:53.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:53:13.190:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:53:33.196:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:53:42.801:  [Thread=14296] OnReceivedRegister Contact=<sip:100@192.168.1.100:15060> Expires=300
+15.12.2022: 20:53:42.801:  [Thread=14296] OnReceivedRegister: Number=100 Address=192.168.1.100:15060
+15.12.2022: 20:53:42.801:  [Thread=14296] OnReceivedRegister: Registered until 15.12.2022 20:58:42
+15.12.2022: 20:53:42.801:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 20:53:42.801:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 20:53:42.801:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 20:53:42.802:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""
+15.12.2022: 20:53:53.185:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:54:13.186:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:54:33.182:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:54:53.182:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:55:13.196:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:55:33.192:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:55:53.197:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:56:13.183:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:56:33.186:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:56:53.184:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:57:13.186:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:57:33.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:57:53.190:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:58:12.811:  [Thread=14296] OnReceivedRegister Contact=<sip:100@192.168.1.100:15060> Expires=300
+15.12.2022: 20:58:12.811:  [Thread=14296] OnReceivedRegister: Number=100 Address=192.168.1.100:15060
+15.12.2022: 20:58:12.811:  [Thread=14296] OnReceivedRegister: Registered until 15.12.2022 21:03:12
+15.12.2022: 20:58:12.811:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 20:58:12.811:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 20:58:12.811:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 20:58:12.811:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""
+15.12.2022: 20:58:13.190:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:58:33.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:58:53.194:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:59:13.197:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:59:33.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 20:59:53.183:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:00:13.182:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:00:33.183:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:00:53.188:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:01:13.185:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:01:33.190:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:01:53.196:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:02:13.189:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:02:33.203:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:02:42.834:  [Thread=14296] OnReceivedRegister Contact=<sip:100@192.168.1.100:15060> Expires=300
+15.12.2022: 21:02:42.834:  [Thread=14296] OnReceivedRegister: Number=100 Address=192.168.1.100:15060
+15.12.2022: 21:02:42.834:  [Thread=14296] OnReceivedRegister: Registered until 15.12.2022 21:07:42
+15.12.2022: 21:02:42.834:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 21:02:42.834:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 21:02:42.834:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 21:02:42.834:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""
+15.12.2022: 21:02:53.187:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:03:13.197:  [Thread=2780] CSTA: <==(127.0.0.1:65381/65382) Ping()
+15.12.2022: 21:03:19.056:  [Thread=15264] ST: OnConnectionCreate Ожидаем Event=6540 epType=1
+15.12.2022: 21:03:19.056:  [Thread=16408] ST: * TVoIPEndPointCallBack.OnConnectionCreate
+15.12.2022: 21:03:19.056:  [Thread=16408] ST: * TVoIPConnection.Create
+15.12.2022: 21:03:19.056:  [Thread=16408] ST: TVoIPConnection.Create: Channel.SetVoIPConnection(29292944);  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=16408
+15.12.2022: 21:03:19.056:  [Thread=16408] ST: TChannel_VoIP.SetVoIPConnection: FVoIPConnection=0 Value=29292944;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=16408
+15.12.2022: 21:03:19.056:  [Thread=16408] ST: * TVoIPConnectionCallBack.Create
+15.12.2022: 21:03:19.057:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxAddRef: 2
+15.12.2022: 21:03:19.057:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxAddRef: 3
+15.12.2022: 21:03:19.057:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxReleaseRef: 2
+15.12.2022: 21:03:19.057:  [Thread=16408] ST: ProcessOnConnectionCreate Выставляем Event=6540
+15.12.2022: 21:03:19.057:  [Thread=16408] ST: ProcessOnConnectionCreate Выставили Event=6540
+15.12.2022: 21:03:19.057:  [Thread=15264] ST: OnConnectionCreate Сработал Event=6540
+15.12.2022: 21:03:19.061:  [Thread=14700] ST: VoIP: OnIncomingCall: CalledNumber=555 CallerName=100 CallerAddress=<sip:100@192.168.1.100:15060> CallerNumber=sip:100@192.168.1.100:5061;  Uid=2100 R=1 C=0 O=0 I=0 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.061:  [Thread=14700] ST: CheckPlayCommRecParams (adaptive);  Uid=2100 R=1 C=0 O=0 I=0 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.061:  [Thread=14700] ST: Q.931: OnSetup CallerNumber=100; CallerName=; CallerAddress=192.168.1.100; CalledNumber=555; CalledName=; CalledAddress=; CallID=; CallInfo=InfinityPhoneCall;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.061:  [Thread=14296] Q.931: OnSetup CallerNumber=100; CallerName=; CallerAddress=192.168.1.100; CalledNumber=555; CalledName=; CalledAddress=; CallID=; CallInfo=InfinityPhoneCall;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=<nil>
+15.12.2022: 21:03:19.061:  [Thread=14296] H323Abonents.FindByAddressNumber: Address=192.168.1.100 Number=100 Device=Абоненты
+15.12.2022: 21:03:19.061:  [Thread=14296] H323Abonents.FindByAddressNumber: Address=192.168.1.100 Number=100 found by address and number: IP001
+15.12.2022: 21:03:19.061:  [Thread=14296] H323Abonent: TimerDeactivate ID=IP001 Active=1 Busy=0 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[2100]
+15.12.2022: 21:03:19.061:  [Thread=14296] OnSetup RemoteParty detected: Number=100 Name=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:19.061:  [Thread=14296] OnSetup RemoteParty updated: Number=100 Name=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:19.061:  [Thread=14296] Q.931: AcceptCall;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:19.061:  [Thread=14700] ST: Q.931: AcceptCall;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.061:  [Thread=14700] ST: ActivateTimer Interval=5000 Event=6;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.067:  [Thread=14700] ST: VoIP: OnAudioChannelsReady;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.067:  [Thread=14700] ST: TChannel_VoIP.CheckCallID;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.070:  [Thread=14700] ST: TChannel_VoIP.CheckCallID: CallID=8ebb2fe8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2 FCallID=;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.070:  [Thread=14700] ST: Q.931: OnSetCallID: CallID=8ebb2fe8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.071:  [Thread=14700] ST: VoIP: OnEstablished;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.071:  [Thread=14296] Q.931: OnSetCallID CallID=8ebb2fe8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14700] ST: TChannel_VoIP.CheckCallID;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.071:  [Thread=14700] ST: TChannel_VoIP.CheckCallID: CallID=8ebb2fe8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2 FCallID=8ebb2fe8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.071:  [Thread=14700] ST: DeActivateTimer;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.071:  [Thread=14700] ST: Q.931: OnConnect CallerNumber=;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.071:  [Thread=14296] Q.931: OnConnect CallerNumber=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] TryRingFromChannelToNumber: Number=555 Emulate=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] TryRingFromChannelToNumber: Number found: 555;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] MyCallSetInfo num=100 anum=@555 state=2;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] TryRingFromChannelToNumber: Number=x555 Emulate=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] TryRingFromChannelToNumber: Number found: x;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] MyCallSetInfo num=100 anum=@x555 state=2;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] CallStatClass change: Old=Unknown New=Inner;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] MonitorController.CallInnerAdd: CallID={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD} DateTime=15.12.2022 21:03:19 State=1 ANumber=@100 AName= AIDUser=0 BNumber=x555 BName= BIDUser=0 
+15.12.2022: 21:03:19.071:  [Thread=14296] Number931Group.GetDestination.Fast: Number=x Uid=2100 Result=z9043
+15.12.2022: 21:03:19.071:  [Thread=14296] CallStatStartWait: Number=x555;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] MonitorController.CallInnerUpdate: CallID={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD} DateTime=15.12.2022 21:03:19 State=1 ANumber=@100 AName= AIDUser=0 BNumber=x555 BName= BIDUser=0 
+15.12.2022: 21:03:19.071:  [Thread=14296] StartRingTo: Number=x Channels=0 H323=1 PBX=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceInnerAdd({3BC7AC10-6A4C-48A6-8A78-25A8F28637AD}, 1, @100, x555, 44910,8773040625, end)
+15.12.2022: 21:03:19.071:  [Thread=14296] StartRingTo A-party base data: CallerNumber=100 CallerName=;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] InnerCallerID by channel: ;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] StartRingTo A-party updated data: CallerNumber=100 CallerName=;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] StartRingTo processing...;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] H323Abonent: TimerDeactivate ID=IP909043 Active=1 Busy=0 IsReg=1 IsUnReg=0 Address=127.0.0.1:65426 CurrentChannels=[3001]
+15.12.2022: 21:03:19.071:  [Thread=14296] SetRingFrom;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:19.071:  [Thread=14296] SetRingTo;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] StartRingTo: Copying CallID from AChannel;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:19.071:  [Thread=14296] CallID change: Old= New={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD};  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:19.071:  [Thread=14296] MyCallSetInfo num=z9043 anum=@100 state=1;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:19.071:  [Thread=14296] CreateElements ch=3001
+15.12.2022: 21:03:19.071:  [Thread=14296] Check for elements before FMyCallNumber=z9043;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:19.071:  [Thread=14296] Check for elements before FMyCallNumber=100;  Uid=2100;  State=Rto R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] CreateElements ACalledNumber=x555 AChannel.LocalParty.Number= AChannel.FCalledNumber=555
+15.12.2022: 21:03:19.071:  [Thread=14296] StartRingTo.CreateElements ch=3001 проверка для номера z9043
+15.12.2022: 21:03:19.071:  [Thread=14296] CME: SetState to Звонок... [Chs=""] Cause=0  Owner=z9043 Number=100 State= Id={EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}
+15.12.2022: 21:03:19.071:  [Thread=14296] StartRingTo.CreateElements ch=3001 проверка для номера 100
+15.12.2022: 21:03:19.071:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CreateCall({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, z9043, 44910,8773040625, {3BC7AC10-6A4C-48A6-8A78-25A8F28637AD}, $CalledNumber=555;, end)
+15.12.2022: 21:03:19.071:  [Thread=14296] Virtual number detected: z9043
+15.12.2022: 21:03:19.071:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallNumber({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, 100, end)
+15.12.2022: 21:03:19.071:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, 2, 44910,8773040625, 0, end)
+15.12.2022: 21:03:19.071:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CreateCall({5885CEE3-EA46-41FC-882F-A8FFF4533266}, 100, 44910,8773040625, {3BC7AC10-6A4C-48A6-8A78-25A8F28637AD}, $CalledNumber=555;, end)
+15.12.2022: 21:03:19.071:  [Thread=14296] Virtual number source found:  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100;
+15.12.2022: 21:03:19.071:  [Thread=14296] CME: SetState to Дозвон... [Chs=""] Cause=0  Owner=100 Number=z9043 State= Id={5885CEE3-EA46-41FC-882F-A8FFF4533266}
+15.12.2022: 21:03:19.071:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallNumber({5885CEE3-EA46-41FC-882F-A8FFF4533266}, z9043, end)
+15.12.2022: 21:03:19.071:  [Thread=14296] Check for elements after;  Uid=3001;  State=Rfrom R=1 C=0  Elem[0] Num=z9043 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.071:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({5885CEE3-EA46-41FC-882F-A8FFF4533266}, 1, 44910,8773040625, 0, end)
+15.12.2022: 21:03:19.071:  [Thread=14296] Check for elements after;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] Q.931: MakeCall CallerNumber=100; CallerName=; CallerAddress=; CalledNumber=z9043; CalledName=; CalledAddress=127.0.0.1:65426; CallID={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD}; CallInfo=; PreDial=;  Uid=3001;  State=Rfrom R=1 C=0  Elem[0] Num=z9043 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.071:  [Thread=14296] ScreenPopUpShow Number=z9043; CallID={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD};  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: 100);  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=1504] ST: Q.931: MakeCall CallerNumber=100; CallerName=; CallerAddress=; CalledNumber=z9043; CalledName=; CalledAddress=127.0.0.1:65426; PostDial=;  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 21:03:19.071:  [Thread=1504] ST: CheckPlayCommRecParams (adaptive);  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 21:03:19.071:  [Thread=14296] StartRingTo RingCount=1;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=14296] Audio: PlayBackRingStart;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.071:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, , AbonentNumberCanonic: 100, AbonentNumberDisplay: 100, AbonentNumberCityCode: , Uid: 2100, IPAddress:)
+15.12.2022: 21:03:19.071:  [Thread=14296] Audio: PlayPBXToneStart Tone=Backring;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.072:  [Thread=14700] ST: Audio: PlayPBXToneStart;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.072:  [Thread=14296] TimerActivate Interval=10000 sec;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.072:  [Thread=14700] ST: Audio: PlayFileNameStart FileName=C:\Program Files (x86)\IntelTelecom\Infinity Call-center X\CxTelephony\sound/backring_high.wav;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.072:  [Thread=14296] TimerExActivate Interval=600 sec.;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.072:  [Thread=14296] StatisticSeanseStart: uid=2100
+15.12.2022: 21:03:19.072:  [Thread=14296] StatisticConnectionStart: uid=2100
+15.12.2022: 21:03:19.072:  [Thread=14296] ImmediateApplyStateChanged;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.072:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionAdd({3BC7AC10-6A4C-48A6-8A78-25A8F28637AD}, 9, 2100, , 100, , 44910,8773040741, end)
+15.12.2022: 21:03:19.072:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetDirection(9, 2, end)
+15.12.2022: 21:03:19.072:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, 9, 44910,8773040741, end)
+15.12.2022: 21:03:19.072:  [Thread=14700] ST: VoIP: OnPlayStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.072:  [Thread=14700] ST: Audio: OnPlayStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.072:  [Thread=14296] Audio: OnPlayStarted;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.074:  [Thread=20644] ST: OnConnectionCreate Ожидаем Event=6592 epType=2
+15.12.2022: 21:03:19.074:  [Thread=11500] ST: * TVoIPEndPointCallBack.OnConnectionCreate
+15.12.2022: 21:03:19.074:  [Thread=11500] ST: * TVoIPConnection.Create
+15.12.2022: 21:03:19.074:  [Thread=11500] ST: TVoIPConnection.Create: Channel.SetVoIPConnection(29292344);  Uid=3001 R=0 C=0 O=1 I=0 Connection=nil Thread=11500
+15.12.2022: 21:03:19.074:  [Thread=11500] ST: TChannel_VoIP.SetVoIPConnection: FVoIPConnection=0 Value=29292344;  Uid=3001 R=0 C=0 O=1 I=0 Connection=nil Thread=11500
+15.12.2022: 21:03:19.074:  [Thread=11500] ST: * TVoIPConnectionCallBack.Create
+15.12.2022: 21:03:19.074:  [Thread=11500] ST: * TVoIPConnectionCallBack.CxAddRef: 2
+15.12.2022: 21:03:19.075:  [Thread=11500] ST: * TVoIPConnectionCallBack.CxReleaseRef: 1
+15.12.2022: 21:03:19.075:  [Thread=11500] ST: ProcessOnConnectionCreate Выставляем Event=6592
+15.12.2022: 21:03:19.075:  [Thread=11500] ST: ProcessOnConnectionCreate Выставили Event=6592
+15.12.2022: 21:03:19.075:  [Thread=20644] ST: OnConnectionCreate Сработал Event=6592
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: VoIP: OnBackRing;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: Q.931: OnSetCallID: CallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: Q.931: OnAlerting;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: VoIP: OnAlertingEx;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=14296] Q.931: OnSetCallID CallID=Unknown;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9043 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=14296] Q.931: OnAlerting;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9043 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.117:  [Thread=14296] CME: CME: EventOnAlerting [Chs="3001"]   Owner=100 Number=z9043 State=Дозвон... Id={5885CEE3-EA46-41FC-882F-A8FFF4533266}
+15.12.2022: 21:03:19.117:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({5885CEE3-EA46-41FC-882F-A8FFF4533266}, 777, 44910,8773045949, 0, end)
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=1504] ST: Q.931: OnAlertingEx;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.117:  [Thread=14296] Q.931: OnAlertingEx;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9043 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: VoIP: OnAudioChannelsReady;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: VoIP: OnEstablished;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=1504] ST: Q.931: OnConnect CallerNumber=;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.118:  [Thread=14296] Q.931: OnConnect CallerNumber=;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9043 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.118:  [Thread=14296] TransferInfoAnswered;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.118:  [Thread=14296] TransferInfoAnswered: Mode = Unknown - ignored;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.118:  [Thread=14296] CallStatStartTalk: Number=@z9043 CSC=3;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.118:  [Thread=14296] CallStatStartTalk: Number=@100 CSC=0;  Uid=3001;  State=Rfrom R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.118:  [Thread=14296] ReSetRingTo;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.118:  [Thread=14296] TimerDeactivate;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.118:  [Thread=14296] TimerExDeactivate;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.118:  [Thread=14296] Audio: PlayStop FromIVR=0;  Uid=2100;  State=Ready R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.118:  [Thread=14296] ReSetRingFrom;  Uid=3001;  State=Rfrom R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.118:  [Thread=14296] CME: SetState to Подключен [Chs="2100"] Cause=0  Owner=z9043 Number=100 State=Звонок... Id={EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}
+15.12.2022: 21:03:19.118:  [Thread=14700] ST: Audio: PlayStop;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.118:  [Thread=14296] CME: SetState to Подключен [Chs="3001"] Cause=0  Owner=100 Number=z9043 State=Дозвон... Id={5885CEE3-EA46-41FC-882F-A8FFF4533266}
+15.12.2022: 21:03:19.118:  [Thread=14296] StatisticConnectionAnswer: uidA=2100
+15.12.2022: 21:03:19.118:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, 4, 44910,8773046065, 0, end)
+15.12.2022: 21:03:19.118:  [Thread=14296] StatisticConnectionAnswer: Copying CallID from chB (C);  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.118:  [Thread=14296] CheckRecord: Uid1=2100 Num1=100 Uid2=3001 Num2=z9043 Record=0
+15.12.2022: 21:03:19.118:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({5885CEE3-EA46-41FC-882F-A8FFF4533266}, 4, 44910,8773046065, 0, end)
+15.12.2022: 21:03:19.118:  [Thread=14296] SetComm;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.118:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({5885CEE3-EA46-41FC-882F-A8FFF4533266}, 9, 44910,8773046065, end)
+15.12.2022: 21:03:19.118:  [Thread=14296] SetComm;  Uid=2100;  State=Ready R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.118:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, 9, 44910,8773046065, end)
+15.12.2022: 21:03:19.118:  [Thread=14296] StartComm AChannel=2100;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.118:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetAbonentB(9, 3001, , z9043, end)
+15.12.2022: 21:03:19.118:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetDirection(9, 3, end)
+15.12.2022: 21:03:19.118:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetConnected(9, 44910,8773046065, end)
+15.12.2022: 21:03:19.118:  [Thread=14296] ScreenPopUpShow Number=100; CallID={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD};  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.118:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: z9043);  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.119:  [Thread=14700] ST: VoIP: OnPlayStoped;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.119:  [Thread=14296] ScreenPopUpShow Number=z9043; CallID={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD};  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.119:  [Thread=14700] ST: Audio: OnPlayStoped;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.119:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: 100);  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.119:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({5885CEE3-EA46-41FC-882F-A8FFF4533266}, , AbonentNumberCanonic: @z9043, AbonentNumberDisplay: Внутр. z9043, AbonentNumberCityCode: , Uid: 3001, IPAddress:)
+15.12.2022: 21:03:19.119:  [Thread=14296] Comm: CommFromStart;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:19.119:  [Thread=14296] Comm: CommFromStart;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.119:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, , AbonentNumberCanonic: 100, AbonentNumberDisplay: 100, AbonentNumberCityCode: , Uid: 2100, IPAddress:)
+15.12.2022: 21:03:19.119:  [Thread=1504] ST: Audio: CommStart UidFrom=2100; UidTo=3001 ForceExternal=0;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.119:  [Thread=14296] Audio: OnPlayStoped;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:19.119:  [Thread=1504] ST: VoIP: OnCommFromStarted;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.119:  [Thread=14700] ST: Audio: CommStart UidFrom=3001; UidTo=2100 ForceExternal=0;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.119:  [Thread=1504] ST: Audio: OnCommFromStarted;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:19.120:  [Thread=14700] ST: VoIP: OnCommFromStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.120:  [Thread=14700] ST: Audio: OnCommFromStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:19.785:  [Thread=14296] SetExtensionState: 100=2
+15.12.2022: 21:03:19.785:  [Thread=14296] ST: SetExtensionState 100=2
+15.12.2022: 21:03:20.155:  [Thread=14700] ST: VoIP: OnCleared Cause=3=0x0003;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:20.155:  [Thread=14700] ST: DeActivateTimer;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:20.155:  [Thread=14700] ST: Q.931: OnDisconnect;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:20.155:  [Thread=14700] ST: Audio: OnCommFromStoped;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292944 Thread=14700
+15.12.2022: 21:03:20.155:  [Thread=14700] ST: TChannel_VoIP.ClearVoIPConnectionRef: VoipConnection=29292944 Thread=14700;  Uid=2100 R=1 C=0 O=0 I=0 Connection=29292944 Thread=14700
+15.12.2022: 21:03:20.155:  [Thread=14296] Q.931: OnDisconnect;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9043 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:20.155:  [Thread=14700] ST: Q.931: OnRelease Cause=3;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 21:03:20.155:  [Thread=14296] CME: Finishing element (case J)  Owner=z9043 Number=100 State=Подключен Id={EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}
+15.12.2022: 21:03:20.155:  [Thread=14296] CME: SetState to Завершен [Chs="2100"] Cause=0  Owner=z9043 Number=100 State=Подключен Id={EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}
+15.12.2022: 21:03:20.155:  [Thread=14296] Channel may be dropped;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:20.155:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({EEBC4504-17EE-4FFD-8AC5-0D93C94A11B7}, 11, 44910,8773166088, 0, end)
+15.12.2022: 21:03:20.155:  [Thread=14296] Detail info: Channel elements:  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; Number: z9043 Number elements:  Elem[0] Num=100 Owner=z9043 State=Завершен Chs=;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:20.155:  [Thread=14296] StatisticConnectionStop: uid=2100
+15.12.2022: 21:03:20.155:  [Thread=14296] Comm: CommFromStop;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:20.155:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionStop(9, 1, 44910,8773281829, end)
+15.12.2022: 21:03:20.155:  [Thread=14296] ReSetComm;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] StartBusy;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] StatisticConnectionStop: uid=3001
+15.12.2022: 21:03:20.156:  [Thread=1504] ST: Audio: CommStop UidFrom=2100; UidTo=3001;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.156:  [Thread=14296] StartBusy: SetReady case B;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionStop(9, 2, 44910,8773281944, end)
+15.12.2022: 21:03:20.156:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9043 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] CME: Finishing element (case K) with cause=0  Owner=100 Number=z9043 State=Подключен Id={5885CEE3-EA46-41FC-882F-A8FFF4533266}
+15.12.2022: 21:03:20.156:  [Thread=14296] CME: SetState to Завершен [Chs="3001"] Cause=0  Owner=100 Number=z9043 State=Подключен Id={5885CEE3-EA46-41FC-882F-A8FFF4533266}
+15.12.2022: 21:03:20.156:  [Thread=14296] Channel may be dropped;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({5885CEE3-EA46-41FC-882F-A8FFF4533266}, 13, 44910,8773166204, 0, end)
+15.12.2022: 21:03:20.156:  [Thread=14296] Detail info: Channel elements:  Number: 100 Number elements:  Elem[0] Num=z9043 Owner=100 State=Завершен Chs=;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] CallStatClear;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] Comm: CommFromStop;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] CallID change: Old={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD} New=;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] CallStatClear;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] Q.931: DropCall;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] SetReady;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] CallStatClear;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] MonitorController.CallInnerFinish: CallID={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD} DateTime=15.12.2022 21:03:20
+15.12.2022: 21:03:20.156:  [Thread=14296] CallStatClass change: Old=Inner New=Unknown;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] Clearing CallID and IdSeance cause by call finished CallID={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD} IdSeanse=8;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] CallID change: Old={3BC7AC10-6A4C-48A6-8A78-25A8F28637AD} New=;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] CallStatClear;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceInnerSetState({3BC7AC10-6A4C-48A6-8A78-25A8F28637AD}, 3, 44910,8773166204, end)
+15.12.2022: 21:03:20.156:  [Thread=14296] CallID is no longer exists: {3BC7AC10-6A4C-48A6-8A78-25A8F28637AD}
+15.12.2022: 21:03:20.156:  [Thread=14296] StopAllCommTos;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] Comm: CommFromStop;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9043
+15.12.2022: 21:03:20.156:  [Thread=14296] StopAllCommFroms;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] Q.931: OnRelease Cause=3;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] SetReady;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] StopAllCommTos;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] StopAllCommFroms;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 21:03:20.156:  [Thread=14296] H323Abonent: SetBusy Interval=2000 ID=IP001 Active=1 Busy=0 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[]
+15.12.2022: 21:03:20.156:  [Thread=14296] H323Abonent: TimerActivate ID=IP001 Active=1 Busy=1 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[]
+15.12.2022: 21:03:20.156:  [Thread=14700] ST: Audio: CommStop UidFrom=3001; UidTo=2100;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 21:03:20.156:  [Thread=14700] ST: Audio: CommStop IGNORED;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 21:03:20.156:  [Thread=1504] ST: Q.931: DropCall;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.156:  [Thread=1504] ST: ActivateTimer Interval=15000 Event=5;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.156:  [Thread=1504] ST: Audio: CommStop UidFrom=2100; UidTo=3001;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.156:  [Thread=1504] ST: Audio: CommStop IGNORED;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.156:  [Thread=1504] ST: VoIP: OnCommFromStoped;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.156:  [Thread=1504] ST: Audio: OnCommFromStoped;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.239:  [Thread=1504] ST: VoIP: OnCleared Cause=0=0x0000;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.239:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.239:  [Thread=1504] ST: Q.931: OnDisconnect;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.239:  [Thread=1504] ST: TChannel_VoIP.ClearVoIPConnectionRef: VoipConnection=29292344 Thread=1504;  Uid=3001 R=1 C=0 O=0 I=0 Connection=29292344 Thread=1504
+15.12.2022: 21:03:20.239:  [Thread=1504] ST: Q.931: OnRelease Cause=0;  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 21:03:20.239:  [Thread=14296] Q.931: OnDisconnect;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9043
+15.12.2022: 21:03:20.239:  [Thread=16752] ST: * TVoIPConnectionCallBack.CxReleaseRef: 0
+15.12.2022: 21:03:20.239:  [Thread=16752] ST: * TVoIPConnectionCallBack.Destroy
+15.12.2022: 21:03:20.239:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:20.239:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:20.239:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:20.239:  [Thread=14296] Q.931: OnRelease Cause=0;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:20.239:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:20.239:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:20.239:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9043
+15.12.2022: 21:03:20.239:  [Thread=14296] OnH323AbonentReady ID=IP909043
+15.12.2022: 21:03:20.239:  [Thread=14296] OnSomeItemReady: Numbers="z9043"
+15.12.2022: 21:03:20.239:  [Thread=14296] OnSomeItemReady: Number=z9043 UserStatus=На месте QC=0
+15.12.2022: 21:03:20.239:  [Thread=14296] OnSomeItemReady: Number=z9043 ignored (virtual)
+15.12.2022: 21:03:20.240:  [Thread=20060] ST: VoIPConnectionFreePtr: begin Thread=20060
+15.12.2022: 21:03:20.882:  [Thread=14296] SetExtensionState: 100=0
+15.12.2022: 21:03:20.882:  [Thread=14296] ST: SetExtensionState 100=0
+15.12.2022: 21:03:21.182:  [Thread=17184] ST: * TVoIPConnectionCallBack.CxReleaseRef: 1
+15.12.2022: 21:03:21.182:  [Thread=17184] ST: * TVoIPConnectionCallBack.CxReleaseRef: 0
+15.12.2022: 21:03:21.182:  [Thread=17184] ST: * TVoIPConnectionCallBack.Destroy
+15.12.2022: 21:03:21.184:  [Thread=20316] ST: VoIPConnectionFreePtr: begin Thread=20316
+15.12.2022: 21:03:21.244:  [Thread=20060] ST: VoIPConnectionFreePtr: start Thread=20060
+15.12.2022: 21:03:21.244:  [Thread=20060] ST: * TVoIPConnection.Destroy Thread=20060
+15.12.2022: 21:03:21.244:  [Thread=20060] ST: * TVoIPConnection.Destroy finished Thread=20060
+15.12.2022: 21:03:21.244:  [Thread=20060] ST: VoIPConnectionFreePtr: end Thread=20060
+15.12.2022: 21:03:21.602:  [Thread=15264] ST: OnConnectionCreate Ожидаем Event=6340 epType=1
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: * TVoIPEndPointCallBack.OnConnectionCreate
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: * TVoIPConnection.Create
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: TVoIPConnection.Create: Channel.SetVoIPConnection(29292344);  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=16408
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: TChannel_VoIP.SetVoIPConnection: FVoIPConnection=0 Value=29292344;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=16408
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: * TVoIPConnectionCallBack.Create
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxAddRef: 2
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxAddRef: 3
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: * TVoIPConnectionCallBack.CxReleaseRef: 2
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: ProcessOnConnectionCreate Выставляем Event=6340
+15.12.2022: 21:03:21.602:  [Thread=16408] ST: ProcessOnConnectionCreate Выставили Event=6340
+15.12.2022: 21:03:21.602:  [Thread=15264] ST: OnConnectionCreate Сработал Event=6340
+15.12.2022: 21:03:21.607:  [Thread=14700] ST: VoIP: OnIncomingCall: CalledNumber=555 CallerName=100 CallerAddress=<sip:100@192.168.1.100:15060> CallerNumber=sip:100@192.168.1.100:5061;  Uid=2100 R=1 C=0 O=0 I=0 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.607:  [Thread=14700] ST: CheckPlayCommRecParams (adaptive);  Uid=2100 R=1 C=0 O=0 I=0 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.607:  [Thread=14700] ST: Q.931: OnSetup CallerNumber=100; CallerName=; CallerAddress=192.168.1.100; CalledNumber=555; CalledName=; CalledAddress=; CallID=; CallInfo=InfinityPhoneCall;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.607:  [Thread=14296] Q.931: OnSetup CallerNumber=100; CallerName=; CallerAddress=192.168.1.100; CalledNumber=555; CalledName=; CalledAddress=; CallID=; CallInfo=InfinityPhoneCall;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=<nil>
+15.12.2022: 21:03:21.607:  [Thread=14296] H323Abonents.FindByAddressNumber: Address=192.168.1.100 Number=100 Device=Абоненты
+15.12.2022: 21:03:21.607:  [Thread=14296] H323Abonents.FindByAddressNumber: Address=192.168.1.100 Number=100 found by address and number: IP001
+15.12.2022: 21:03:21.607:  [Thread=14296] H323Abonent: TimerDeactivate ID=IP001 Active=1 Busy=1 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[2100]
+15.12.2022: 21:03:21.607:  [Thread=14296] OnSetup RemoteParty detected: Number=100 Name=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:21.607:  [Thread=14296] OnSetup RemoteParty updated: Number=100 Name=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:21.607:  [Thread=14296] Q.931: AcceptCall;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:21.607:  [Thread=14700] ST: Q.931: AcceptCall;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.607:  [Thread=14700] ST: ActivateTimer Interval=5000 Event=6;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.612:  [Thread=14700] ST: VoIP: OnAudioChannelsReady;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.612:  [Thread=14700] ST: TChannel_VoIP.CheckCallID;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.616:  [Thread=14700] ST: TChannel_VoIP.CheckCallID: CallID=6e9e33e8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2 FCallID=;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.616:  [Thread=14700] ST: Q.931: OnSetCallID: CallID=6e9e33e8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.616:  [Thread=14700] ST: VoIP: OnEstablished;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.616:  [Thread=14700] ST: TChannel_VoIP.CheckCallID;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.616:  [Thread=14296] Q.931: OnSetCallID CallID=6e9e33e8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14700] ST: TChannel_VoIP.CheckCallID: CallID=6e9e33e8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2 FCallID=6e9e33e8-6c25-1910-9f88-2c56dcd5678d@DESKTOP-3HTQQU2;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.616:  [Thread=14700] ST: DeActivateTimer;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.616:  [Thread=14700] ST: Q.931: OnConnect CallerNumber=;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.616:  [Thread=14296] Q.931: OnConnect CallerNumber=;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] TryRingFromChannelToNumber: Number=555 Emulate=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] TryRingFromChannelToNumber: Number found: 555;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] MyCallSetInfo num=100 anum=@555 state=2;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] TryRingFromChannelToNumber: Number=x555 Emulate=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] TryRingFromChannelToNumber: Number found: x;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] MyCallSetInfo num=100 anum=@x555 state=2;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] CallStatClass change: Old=Unknown New=Inner;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] MonitorController.CallInnerAdd: CallID={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8} DateTime=15.12.2022 21:03:21 State=1 ANumber=@100 AName= AIDUser=0 BNumber=x555 BName= BIDUser=0 
+15.12.2022: 21:03:21.616:  [Thread=14296] Number931Group.GetDestination.Fast: Number=x Uid=2100 Result=z9038
+15.12.2022: 21:03:21.616:  [Thread=14296] CallStatStartWait: Number=x555;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] MonitorController.CallInnerUpdate: CallID={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8} DateTime=15.12.2022 21:03:21 State=1 ANumber=@100 AName= AIDUser=0 BNumber=x555 BName= BIDUser=0 
+15.12.2022: 21:03:21.616:  [Thread=14296] StartRingTo: Number=x Channels=0 H323=1 PBX=0;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] StartRingTo A-party base data: CallerNumber=100 CallerName=;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] InnerCallerID by channel: ;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] StartRingTo A-party updated data: CallerNumber=100 CallerName=;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] StartRingTo processing...;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] H323Abonent: TimerDeactivate ID=IP909038 Active=1 Busy=0 IsReg=1 IsUnReg=0 Address=127.0.0.1:65421 CurrentChannels=[3001]
+15.12.2022: 21:03:21.616:  [Thread=14296] SetRingFrom;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:21.616:  [Thread=14296] SetRingTo;  Uid=2100;  State=Ready R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] StartRingTo: Copying CallID from AChannel;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:21.616:  [Thread=14296] CallID change: Old= New={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8};  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:21.616:  [Thread=14296] MyCallSetInfo num=z9038 anum=@100 state=1;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:21.616:  [Thread=14296] CreateElements ch=3001
+15.12.2022: 21:03:21.616:  [Thread=14296] Check for elements before FMyCallNumber=z9038;  Uid=3001;  State=Rfrom R=1 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:21.616:  [Thread=14296] Check for elements before FMyCallNumber=100;  Uid=2100;  State=Rto R=0 C=1  ActiveNumber=100
+15.12.2022: 21:03:21.616:  [Thread=14296] CreateElements ACalledNumber=x555 AChannel.LocalParty.Number= AChannel.FCalledNumber=555
+15.12.2022: 21:03:21.616:  [Thread=14296] StartRingTo.CreateElements ch=3001 проверка для номера z9038
+15.12.2022: 21:03:21.616:  [Thread=14296] CME: SetState to Звонок... [Chs=""] Cause=0  Owner=z9038 Number=100 State= Id={9F2039C7-9BE8-4954-9249-F158E624840D}
+15.12.2022: 21:03:21.616:  [Thread=14296] StartRingTo.CreateElements ch=3001 проверка для номера 100
+15.12.2022: 21:03:21.616:  [Thread=14296] Virtual number detected: z9038
+15.12.2022: 21:03:21.616:  [Thread=14296] Virtual number source found:  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100;
+15.12.2022: 21:03:21.616:  [Thread=14296] CME: SetState to Дозвон... [Chs=""] Cause=0  Owner=100 Number=z9038 State= Id={C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}
+15.12.2022: 21:03:21.616:  [Thread=14296] Check for elements after;  Uid=3001;  State=Rfrom R=1 C=0  Elem[0] Num=z9038 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.617:  [Thread=14296] Check for elements after;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=14296] Q.931: MakeCall CallerNumber=100; CallerName=; CallerAddress=; CalledNumber=z9038; CalledName=; CalledAddress=127.0.0.1:65421; CallID={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8}; CallInfo=; PreDial=;  Uid=3001;  State=Rfrom R=1 C=0  Elem[0] Num=z9038 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.617:  [Thread=14296] ScreenPopUpShow Number=z9038; CallID={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8};  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: 100);  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=14296] StartRingTo RingCount=1;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=14296] Audio: PlayBackRingStart;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=14296] Audio: PlayPBXToneStart Tone=Backring;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=14296] TimerActivate Interval=10000 sec;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CreateCall({9F2039C7-9BE8-4954-9249-F158E624840D}, z9038, 44910,8773335185, {6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8}, $CalledNumber=555;, end)
+15.12.2022: 21:03:21.617:  [Thread=14296] TimerExActivate Interval=600 sec.;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=14296] StatisticSeanseStart: uid=2100
+15.12.2022: 21:03:21.617:  [Thread=14296] StatisticConnectionStart: uid=2100
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallNumber({9F2039C7-9BE8-4954-9249-F158E624840D}, 100, end)
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({9F2039C7-9BE8-4954-9249-F158E624840D}, 2, 44910,8773335185, 0, end)
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CreateCall({C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}, 100, 44910,8773335185, {6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8}, $CalledNumber=555;, end)
+15.12.2022: 21:03:21.617:  [Thread=14296] ImmediateApplyStateChanged;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceInnerAdd({6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8}, 1, @100, x555, 44910,8773335185, end)
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallNumber({C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}, z9038, end)
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}, 1, 44910,8773335185, 0, end)
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({9F2039C7-9BE8-4954-9249-F158E624840D}, , AbonentNumberCanonic: 100, AbonentNumberDisplay: 100, AbonentNumberCityCode: , Uid: 2100, IPAddress:)
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionAdd({6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8}, 11, 2100, , 100, , 44910,8773335301, end)
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetDirection(11, 2, end)
+15.12.2022: 21:03:21.617:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({9F2039C7-9BE8-4954-9249-F158E624840D}, 11, 44910,8773335301, end)
+15.12.2022: 21:03:21.617:  [Thread=1504] ST: Q.931: MakeCall CallerNumber=100; CallerName=; CallerAddress=; CalledNumber=z9038; CalledName=; CalledAddress=127.0.0.1:65421; PostDial=;  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 21:03:21.617:  [Thread=1504] ST: CheckPlayCommRecParams (adaptive);  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 21:03:21.617:  [Thread=14700] ST: Audio: PlayPBXToneStart;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.617:  [Thread=14700] ST: Audio: PlayFileNameStart FileName=C:\Program Files (x86)\IntelTelecom\Infinity Call-center X\CxTelephony\sound/backring_high.wav;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.618:  [Thread=14700] ST: VoIP: OnPlayStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.618:  [Thread=14700] ST: Audio: OnPlayStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.618:  [Thread=14296] Audio: OnPlayStarted;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.620:  [Thread=19336] ST: OnConnectionCreate Ожидаем Event=6108 epType=2
+15.12.2022: 21:03:21.620:  [Thread=11500] ST: * TVoIPEndPointCallBack.OnConnectionCreate
+15.12.2022: 21:03:21.620:  [Thread=11500] ST: * TVoIPConnection.Create
+15.12.2022: 21:03:21.620:  [Thread=11500] ST: TVoIPConnection.Create: Channel.SetVoIPConnection(29292024);  Uid=3001 R=0 C=0 O=1 I=0 Connection=nil Thread=11500
+15.12.2022: 21:03:21.620:  [Thread=11500] ST: TChannel_VoIP.SetVoIPConnection: FVoIPConnection=0 Value=29292024;  Uid=3001 R=0 C=0 O=1 I=0 Connection=nil Thread=11500
+15.12.2022: 21:03:21.620:  [Thread=11500] ST: * TVoIPConnectionCallBack.Create
+15.12.2022: 21:03:21.620:  [Thread=11500] ST: * TVoIPConnectionCallBack.CxAddRef: 2
+15.12.2022: 21:03:21.621:  [Thread=11500] ST: * TVoIPConnectionCallBack.CxReleaseRef: 1
+15.12.2022: 21:03:21.621:  [Thread=11500] ST: ProcessOnConnectionCreate Выставляем Event=6108
+15.12.2022: 21:03:21.621:  [Thread=11500] ST: ProcessOnConnectionCreate Выставили Event=6108
+15.12.2022: 21:03:21.621:  [Thread=19336] ST: OnConnectionCreate Сработал Event=6108
+15.12.2022: 21:03:21.686:  [Thread=1504] ST: VoIP: OnBackRing;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.686:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.686:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.686:  [Thread=1504] ST: Q.931: OnSetCallID: CallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.686:  [Thread=1504] ST: Q.931: OnAlerting;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.686:  [Thread=1504] ST: VoIP: OnAlertingEx;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.686:  [Thread=14296] Q.931: OnSetCallID CallID=Unknown;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9038 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.686:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.686:  [Thread=14296] Q.931: OnAlerting;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9038 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.686:  [Thread=14296] CME: CME: EventOnAlerting [Chs="3001"]   Owner=100 Number=z9038 State=Дозвон... Id={C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}
+15.12.2022: 21:03:21.686:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}, 777, 44910,8773343287, 0, end)
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: Q.931: OnAlertingEx;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: VoIP: OnAudioChannelsReady;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=14296] Q.931: OnAlertingEx;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9038 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: VoIP: OnEstablished;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: TChannel_VoIP.CheckCallID;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: TChannel_VoIP.CheckCallID: CallID=Unknown FCallID=Unknown;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=1504] ST: Q.931: OnConnect CallerNumber=;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.687:  [Thread=14296] Q.931: OnConnect CallerNumber=;  Uid=3001;  State=Rfrom R=0 C=0  Elem[0] Num=z9038 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=14296] TransferInfoAnswered;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=14296] TransferInfoAnswered: Mode = Unknown - ignored;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=14296] CallStatStartTalk: Number=@z9038 CSC=3;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=14296] CallStatStartTalk: Number=@100 CSC=0;  Uid=3001;  State=Rfrom R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=14296] ReSetRingTo;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=14296] TimerDeactivate;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=14296] TimerExDeactivate;  Uid=2100;  State=Rto R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=14296] Audio: PlayStop FromIVR=0;  Uid=2100;  State=Ready R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Звонок... Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=14296] ReSetRingFrom;  Uid=3001;  State=Rfrom R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Дозвон... Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=14296] CME: SetState to Подключен [Chs="2100"] Cause=0  Owner=z9038 Number=100 State=Звонок... Id={9F2039C7-9BE8-4954-9249-F158E624840D}
+15.12.2022: 21:03:21.687:  [Thread=14700] ST: Audio: PlayStop;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.687:  [Thread=14296] CME: SetState to Подключен [Chs="3001"] Cause=0  Owner=100 Number=z9038 State=Дозвон... Id={C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}
+15.12.2022: 21:03:21.687:  [Thread=14296] StatisticConnectionAnswer: uidA=2100
+15.12.2022: 21:03:21.687:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({9F2039C7-9BE8-4954-9249-F158E624840D}, 4, 44910,8773343403, 0, end)
+15.12.2022: 21:03:21.687:  [Thread=14296] StatisticConnectionAnswer: Copying CallID from chB (C);  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}, 4, 44910,8773343403, 0, end)
+15.12.2022: 21:03:21.687:  [Thread=14296] CheckRecord: Uid1=2100 Num1=100 Uid2=3001 Num2=z9038 Record=0
+15.12.2022: 21:03:21.687:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}, 11, 44910,8773343403, end)
+15.12.2022: 21:03:21.687:  [Thread=14296] SetComm;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=14296] SetComm;  Uid=2100;  State=Ready R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) CallLinkToConnection({9F2039C7-9BE8-4954-9249-F158E624840D}, 11, 44910,8773343403, end)
+15.12.2022: 21:03:21.687:  [Thread=14296] StartComm AChannel=2100;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetAbonentB(11, 3001, , z9038, end)
+15.12.2022: 21:03:21.687:  [Thread=14296] ScreenPopUpShow Number=100; CallID={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8};  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetDirection(11, 3, end)
+15.12.2022: 21:03:21.687:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: z9038);  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.687:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionSetConnected(11, 44910,8773343403, end)
+15.12.2022: 21:03:21.687:  [Thread=14296] ScreenPopUpShow Number=z9038; CallID={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8};  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=14296] CSTAExternalInfo from this Channel (RemoteParty: 100);  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.687:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}, , AbonentNumberCanonic: @z9038, AbonentNumberDisplay: Внутр. z9038, AbonentNumberCityCode: , Uid: 3001, IPAddress:)
+15.12.2022: 21:03:21.688:  [Thread=14700] ST: VoIP: OnPlayStoped;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.688:  [Thread=14700] ST: Audio: OnPlayStoped;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.688:  [Thread=14296] Comm: CommFromStart;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:21.688:  [Thread=14296] Comm: CommFromStart;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.688:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallInfo({9F2039C7-9BE8-4954-9249-F158E624840D}, , AbonentNumberCanonic: 100, AbonentNumberDisplay: 100, AbonentNumberCityCode: , Uid: 2100, IPAddress:)
+15.12.2022: 21:03:21.688:  [Thread=1504] ST: Audio: CommStart UidFrom=2100; UidTo=3001 ForceExternal=0;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.688:  [Thread=14296] Audio: OnPlayStoped;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:21.688:  [Thread=1504] ST: VoIP: OnCommFromStarted;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.688:  [Thread=14700] ST: Audio: CommStart UidFrom=3001; UidTo=2100 ForceExternal=0;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.688:  [Thread=1504] ST: Audio: OnCommFromStarted;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:21.689:  [Thread=14700] ST: VoIP: OnCommFromStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.689:  [Thread=14700] ST: Audio: OnCommFromStarted;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:21.985:  [Thread=14296] SetExtensionState: 100=2
+15.12.2022: 21:03:21.985:  [Thread=14296] ST: SetExtensionState 100=2
+15.12.2022: 21:03:22.189:  [Thread=20316] ST: VoIPConnectionFreePtr: start Thread=20316
+15.12.2022: 21:03:22.189:  [Thread=20316] ST: * TVoIPConnection.Destroy Thread=20316
+15.12.2022: 21:03:22.189:  [Thread=20316] ST: * TVoIPConnection.Destroy finished Thread=20316
+15.12.2022: 21:03:22.189:  [Thread=20316] ST: VoIPConnectionFreePtr: end Thread=20316
+15.12.2022: 21:03:22.337:  [Thread=14700] ST: VoIP: OnCleared Cause=3=0x0003;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:22.337:  [Thread=14700] ST: DeActivateTimer;  Uid=2100 R=0 C=1 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:22.337:  [Thread=14700] ST: Q.931: OnDisconnect;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:22.337:  [Thread=14700] ST: Audio: OnCommFromStoped;  Uid=2100 R=0 C=0 O=0 I=1 Connection=29292344 Thread=14700
+15.12.2022: 21:03:22.337:  [Thread=14700] ST: TChannel_VoIP.ClearVoIPConnectionRef: VoipConnection=29292344 Thread=14700;  Uid=2100 R=1 C=0 O=0 I=0 Connection=29292344 Thread=14700
+15.12.2022: 21:03:22.337:  [Thread=14296] Q.931: OnDisconnect;  Uid=2100;  State=Comm R=0 C=1  Elem[0] Num=100 Owner=z9038 State=Подключен Chs=2100; ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14700] ST: Q.931: OnRelease Cause=3;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 21:03:22.337:  [Thread=14296] CME: Finishing element (case J)  Owner=z9038 Number=100 State=Подключен Id={9F2039C7-9BE8-4954-9249-F158E624840D}
+15.12.2022: 21:03:22.337:  [Thread=14296] CME: SetState to Завершен [Chs="2100"] Cause=0  Owner=z9038 Number=100 State=Подключен Id={9F2039C7-9BE8-4954-9249-F158E624840D}
+15.12.2022: 21:03:22.337:  [Thread=14296] Channel may be dropped;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({9F2039C7-9BE8-4954-9249-F158E624840D}, 11, 44910,8773418634, 0, end)
+15.12.2022: 21:03:22.337:  [Thread=14296] Detail info: Channel elements:  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; Number: z9038 Number elements:  Elem[0] Num=100 Owner=z9038 State=Завершен Chs=;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] StatisticConnectionStop: uid=2100
+15.12.2022: 21:03:22.337:  [Thread=14296] Comm: CommFromStop;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionStop(11, 1, 44910,8773534375, end)
+15.12.2022: 21:03:22.337:  [Thread=14296] ReSetComm;  Uid=3001;  State=Comm R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] StartBusy;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=1504] ST: Audio: CommStop UidFrom=2100; UidTo=3001;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.337:  [Thread=14296] StatisticConnectionStop: uid=3001
+15.12.2022: 21:03:22.337:  [Thread=14296] StartBusy: SetReady case B;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) ConnectionStop(11, 2, 44910,8773534375, end)
+15.12.2022: 21:03:22.337:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=0 C=1  Elem[0] Num=z9038 Owner=100 State=Подключен Chs=3001; ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] CME: Finishing element (case K) with cause=0  Owner=100 Number=z9038 State=Подключен Id={C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}
+15.12.2022: 21:03:22.337:  [Thread=14296] CME: SetState to Завершен [Chs="3001"] Cause=0  Owner=100 Number=z9038 State=Подключен Id={C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}
+15.12.2022: 21:03:22.337:  [Thread=14296] Channel may be dropped;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SetCallState({C77412BF-DFD8-4EF5-ADBE-575E9AA5D19C}, 13, 44910,8773418634, 0, end)
+15.12.2022: 21:03:22.337:  [Thread=14296] Detail info: Channel elements:  Number: 100 Number elements:  Elem[0] Num=z9043 Owner=100 State=Завершен Chs= Elem[1] Num=z9038 Owner=100 State=Завершен Chs=;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] CallStatClear;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] Comm: CommFromStop;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] CallID change: Old={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8} New=;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] CallStatClear;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] Q.931: DropCall;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] SetReady;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] CallStatClear;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] MonitorController.CallInnerFinish: CallID={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8} DateTime=15.12.2022 21:03:22
+15.12.2022: 21:03:22.337:  [Thread=14296] CallStatClass change: Old=Inner New=Unknown;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] Clearing CallID and IdSeance cause by call finished CallID={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8} IdSeanse=10;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] CallID change: Old={6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8} New=;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] CallStatClear;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=2780] CSTA [DeltaT=0]: ==>(127.0.0.1:65381/65382) SeanceInnerSetState({6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8}, 3, 44910,8773418634, end)
+15.12.2022: 21:03:22.337:  [Thread=14296] CallID is no longer exists: {6A3DE826-24C5-4AB1-8A14-ACA9FB049FC8}
+15.12.2022: 21:03:22.337:  [Thread=14296] StopAllCommTos;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] Comm: CommFromStop;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9038
+15.12.2022: 21:03:22.337:  [Thread=14296] StopAllCommFroms;  Uid=2100;  State=Comm R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] Q.931: OnRelease Cause=3;  Uid=2100;  State=Ready R=0 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] SetReady;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] StopAllCommTos;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] StopAllCommFroms;  Uid=2100;  State=Ready R=1 C=0  ActiveNumber=100
+15.12.2022: 21:03:22.337:  [Thread=14296] H323Abonent: SetBusy Interval=2000 ID=IP001 Active=1 Busy=0 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[]
+15.12.2022: 21:03:22.337:  [Thread=14296] H323Abonent: TimerActivate ID=IP001 Active=1 Busy=1 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[]
+15.12.2022: 21:03:22.338:  [Thread=14700] ST: Audio: CommStop UidFrom=3001; UidTo=2100;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 21:03:22.338:  [Thread=1504] ST: Q.931: DropCall;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.338:  [Thread=14700] ST: Audio: CommStop IGNORED;  Uid=2100 R=1 C=0 O=0 I=0 Connection=nil Thread=14700
+15.12.2022: 21:03:22.338:  [Thread=1504] ST: ActivateTimer Interval=15000 Event=5;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.338:  [Thread=1504] ST: Audio: CommStop UidFrom=2100; UidTo=3001;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.338:  [Thread=1504] ST: Audio: CommStop IGNORED;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.338:  [Thread=1504] ST: VoIP: OnCommFromStoped;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.338:  [Thread=1504] ST: Audio: OnCommFromStoped;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.442:  [Thread=1504] ST: VoIP: OnCleared Cause=0=0x0000;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.442:  [Thread=1504] ST: DeActivateTimer;  Uid=3001 R=0 C=1 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.442:  [Thread=1504] ST: Q.931: OnDisconnect;  Uid=3001 R=0 C=0 O=1 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.442:  [Thread=1504] ST: TChannel_VoIP.ClearVoIPConnectionRef: VoipConnection=29292024 Thread=1504;  Uid=3001 R=1 C=0 O=0 I=0 Connection=29292024 Thread=1504
+15.12.2022: 21:03:22.442:  [Thread=1504] ST: Q.931: OnRelease Cause=0;  Uid=3001 R=1 C=0 O=0 I=0 Connection=nil Thread=1504
+15.12.2022: 21:03:22.442:  [Thread=14296] Q.931: OnDisconnect;  Uid=3001;  State=Ready R=0 C=1  ActiveNumber=z9038
+15.12.2022: 21:03:22.442:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:22.442:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:22.442:  [Thread=6928] ST: * TVoIPConnectionCallBack.CxReleaseRef: 0
+15.12.2022: 21:03:22.442:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:22.442:  [Thread=6928] ST: * TVoIPConnectionCallBack.Destroy
+15.12.2022: 21:03:22.442:  [Thread=14296] Q.931: OnRelease Cause=0;  Uid=3001;  State=Ready R=0 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:22.442:  [Thread=14296] SetReady;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:22.442:  [Thread=14296] StopAllCommTos;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:22.442:  [Thread=14296] StopAllCommFroms;  Uid=3001;  State=Ready R=1 C=0  ActiveNumber=z9038
+15.12.2022: 21:03:22.442:  [Thread=14296] OnH323AbonentReady ID=IP909038
+15.12.2022: 21:03:22.442:  [Thread=14296] OnSomeItemReady: Numbers="z9038"
+15.12.2022: 21:03:22.442:  [Thread=14296] OnSomeItemReady: Number=z9038 UserStatus=На месте QC=0
+15.12.2022: 21:03:22.442:  [Thread=14296] OnSomeItemReady: Number=z9038 ignored (virtual)
+15.12.2022: 21:03:22.446:  [Thread=19756] ST: VoIPConnectionFreePtr: begin Thread=19756
+15.12.2022: 21:03:23.090:  [Thread=14296] SetExtensionState: 100=0
+15.12.2022: 21:03:23.090:  [Thread=14296] ST: SetExtensionState 100=0
+15.12.2022: 21:03:23.202:  [Thread=17184] ST: * TVoIPConnectionCallBack.CxReleaseRef: 1
+15.12.2022: 21:03:23.203:  [Thread=17184] ST: * TVoIPConnectionCallBack.CxReleaseRef: 0
+15.12.2022: 21:03:23.203:  [Thread=17184] ST: * TVoIPConnectionCallBack.Destroy
+15.12.2022: 21:03:23.204:  [Thread=22236] ST: VoIPConnectionFreePtr: begin Thread=22236
+15.12.2022: 21:03:23.455:  [Thread=19756] ST: VoIPConnectionFreePtr: start Thread=19756
+15.12.2022: 21:03:23.455:  [Thread=19756] ST: * TVoIPConnection.Destroy Thread=19756
+15.12.2022: 21:03:23.455:  [Thread=19756] ST: * TVoIPConnection.Destroy finished Thread=19756
+15.12.2022: 21:03:23.455:  [Thread=19756] ST: VoIPConnectionFreePtr: end Thread=19756
+15.12.2022: 21:03:24.218:  [Thread=22236] ST: VoIPConnectionFreePtr: start Thread=22236
+15.12.2022: 21:03:24.218:  [Thread=22236] ST: * TVoIPConnection.Destroy Thread=22236
+15.12.2022: 21:03:24.218:  [Thread=22236] ST: * TVoIPConnection.Destroy finished Thread=22236
+15.12.2022: 21:03:24.218:  [Thread=22236] ST: VoIPConnectionFreePtr: end Thread=22236
+15.12.2022: 21:03:24.420:  [Thread=14296] H323Abonent: OnTimer ID=IP001 Active=1 Busy=1 IsReg=1 IsUnReg=0 Address=192.168.1.100:15060 CurrentChannels=[]
+15.12.2022: 21:03:24.420:  [Thread=14296] OnH323AbonentReady ID=IP001
+15.12.2022: 21:03:24.420:  [Thread=14296] OnSomeItemReady: Numbers="100"
+15.12.2022: 21:03:24.420:  [Thread=14296] OnSomeItemReady: Number=100 UserStatus=На месте QC=0
+15.12.2022: 21:03:24.420:  [Thread=14296] OnSomeItemReady: Number=100 GroupOwners=""

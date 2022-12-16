@@ -1,0 +1,25 @@
+﻿@if (Lines.Count > 0)
+{
+    <ul>
+        @foreach (var line in Lines)
+        {
+            <li>@line</li>
+        }
+    </ul>
+}
+@code {
+    protected override void OnInitialized()
+    {
+        if (File.Exists(Path))
+            Lines = Lines = File.ReadAllLines(Path).ToList();
+        if (Lines == null)
+            Lines = new List<string>();
+
+    }
+
+    [Parameter]
+    public List<string> Lines { get; set; }
+    public string Path { get; set; } = $"{Environment.CurrentDirectory}/wwwroot/files/mainlog.txt";
+
+    
+}

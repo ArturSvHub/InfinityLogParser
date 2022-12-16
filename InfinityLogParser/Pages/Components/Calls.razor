@@ -1,0 +1,12 @@
+﻿@using Parser;
+@foreach (var call in CallsList)
+{
+    <p>Дата звонка - @call.OnIncomingCallDate</p>
+    <p>Номер дозвона - @call.CalledNumber</p>
+}
+
+
+@code {
+    [Parameter]
+    public List<Call> CallsList { get; set; }
+}
