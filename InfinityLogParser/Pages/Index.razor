@@ -54,7 +54,7 @@
         }
         return $"{tokens[0]} {tokens[1]}";
     }
-    private int GetCalledNumber(string line)
+    private string GetCalledNumber(string line)
     {
         string result=string.Empty;
         var tokens = line.Split(' ');
@@ -66,8 +66,8 @@
             }
         }
         if (result.Length > 1)
-            return Int32.Parse(result);
+            return result;
         else
-            return 0;
+            return "";
     }
 }
