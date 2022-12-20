@@ -1,8 +1,15 @@
 ﻿@using Parser;
-@foreach (var call in CallsList)
+
+    @foreach (var res in CallsList)
 {
-    <p>Дата звонка - @call.OnIncomingCallDate</p>
-    <p>Номер дозвона - @call.CalledNumber</p>
+    <p>Дата и время звонка = @res.OnIncomingCallDate</p>
+    <p>Номер дозваниваемого = @res.CalledNumber</p>
+    <p>Номер звонящего = @res.CallerNumber</p>
+    <p>Адрес звонящего = @res.CallerAddress</p>
+    <p>Имя звонящего (если есть) = @res.CallerName</p>
+    <p>UId = @res.Uid</p>
+    <p>Connection = @res.Connection</p>
+    <br />
 }
 
 

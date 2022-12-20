@@ -1,0 +1,42 @@
+﻿@page "/pbx";
+@inject FilesService FilesService
+@inject ParserFile ParserFile
+@inject NavigationManager NavM
+<PageTitle>Pbx</PageTitle>
+
+<h1>Pbx</h1>
+@if (files != null && files.Count > 0)
+{
+    foreach (var file in files)
+    {
+        <button class="btn btn-outline-primary" @onclick="@(e=>Parse(file))">@file.Name</button>
+    }
+}
+<Calls CallsList="results"/>
+
+@code {
+    List<FileInfo>? files;
+    string filter = "pbx";
+    string temp = "";
+    List<Call> results = new();
+    protected override void OnInitialized()
+    {
+        if (FilesService.ContainsByName(filter))
+        {
+            files = FilesService.GetFilesByName(filter);
+            results.Clear();
+        }
+    }
+    private void Parse(FileInfo file)
+    {
+        results.Clear();
+        ParserFile.ParserObjects.Clear();
+        ParserFile.AddParserObjectsByKeyWord("OnIncomingCall", file);
+        foreach (var obj in ParserFile.ParserObjects)
+        {
+            results.Add(obj.ParseCalls());
+        }
+        temp = file.Name;
+        StateHasChanged();
+    }
+}

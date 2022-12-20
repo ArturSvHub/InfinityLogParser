@@ -1,0 +1,30 @@
+﻿@page "/traces";
+@inject FilesService FilesService
+@inject ParserFile ParserFile
+<PageTitle>Traces</PageTitle>
+
+<h1>Traces</h1>
+@if (files != null && files.Count > 0)
+{
+    foreach (var file in files)
+    {
+        <button class="btn btn-outline-primary" @onclick="@(e=>Parse(file))">@file.Name</button>
+    }
+    <p>@temp</p>
+}
+@code {
+    List<FileInfo>? files;
+    string filter = "Trace";
+    string temp = "";
+    protected override void OnInitialized()
+    {
+        if (FilesService.ContainsByName(filter))
+        {
+            files = FilesService.GetFilesByName(filter);
+        }
+    }
+    private void Parse(FileInfo file)
+    {
+        temp = file.Name;
+    }
+}
